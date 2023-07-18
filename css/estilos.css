@@ -1,0 +1,88 @@
+.cuerpo {
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/piramide.jpg");
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+@media (max-width: 767px) {
+  video:not(.responsive-video) {
+    max-width: 100%;
+    height: auto;
+  }
+  footer {
+    position: static;
+  }
+  .botella {
+    width: 100%;
+  }
+  .contacto {
+    max-width: 70%;
+  }
+}
+footer {
+  position: fixed;
+  bottom: 0%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+@media (max-width: 767px) {
+  .textoresponsivo {
+    background-color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+  }
+}
+@media (max-width: 767px) and (max-width: 480px) {
+  .contacto {
+    max-width: 90%;
+  }
+}
+p {
+  text-align: justify;
+}
+
+nav li {
+  display: inline;
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 120%;
+}
+
+.botella {
+  width: 50%;
+  height: auto;
+}
+
+.contenedor-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contacto {
+  background-color: #f2f2f2;
+  padding: 3%;
+  max-width: 30%;
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+}
+
+/*# sourceMappingURL=estilos.css.map */
