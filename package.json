@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/matutem2000/PreEntrega2MartinezMatiasLucas/issues"
   },
-  "homepage": "https://github.com/matutem2000/PreEntrega2MartinezMatiasLucas#readme"
+  "homepage": "https://github.com/matutem2000/PreEntrega2MartinezMatiasLucas#readme",
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
 }
