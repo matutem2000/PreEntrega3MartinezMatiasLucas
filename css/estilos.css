@@ -13,9 +13,11 @@
 
 .cuerpo {
   margin: 0;
-  padding: 0;
+  padding-bottom: 3%;
   background-image: url("../img/piramide.jpg");
+  background-repeat: repeat-y;
   font-family: Verdana, Geneva, sans-serif;
+  margin-bottom: 50px;
 }
 .cuerpo .img-logo {
   width: 110px;
@@ -50,7 +52,8 @@
   height: auto;
 }
 .cuerpo .carousel-img {
-  height: 600px; /* Establece la altura fija para las imágenes */
+  height: 600px;
+  max-width: 100%;
 }
 .cuerpo .contenedor-contacto {
   display: flex;
@@ -62,8 +65,7 @@
 .cuerpo .contacto {
   background-color: #f2f2f2;
   padding: 3%;
-  width: 30%; /* Ancho específico para modo PC, ajustar según necesidades */
-  /* max-width: 100%; */ /* Asegura que ocupe el ancho máximo permitido */
+  width: 30%;
 }
 .cuerpo textarea {
   width: 100%;
@@ -78,6 +80,10 @@
     background-color: transparent;
     color: white;
   }
+  .cuerpo .carousel-img {
+    height: 200px;
+    max-width: 100%;
+  }
   .cuerpo video:not(.responsive-video) {
     width: 100%;
     height: auto;
@@ -85,20 +91,14 @@
 }
 
 footer {
-  position: static;
-}
-footer {
-  position: static;
-  /* margin-top: 2%; */
-  bottom: 0%;
+  position: fixed;
+  bottom: 0;
   left: 0;
   width: 100%;
   text-align: center;
   background-color: #f2f2f2;
-}
-footer .shared-button, footer nav li a {
-  text-decoration: none;
-  font-size: 120%;
+  /* margin-top: 20px; */
+  height: 50px;
 }
 
 /*# sourceMappingURL=estilos.css.map */

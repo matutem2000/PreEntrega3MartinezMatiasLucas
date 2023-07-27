@@ -17,9 +17,11 @@
 
 .cuerpo {
   margin: 0;
-  padding: 0;
+  padding-bottom: 3%;
   background-image: url("../img/piramide.jpg");
+  background-repeat: repeat-y;
   font-family: Verdana, Geneva, sans-serif;
+  margin-bottom: $footer-height;
 
   .menu {
     @extend .button-style; // Extendemos la clase para estilos de botones en .menu
@@ -54,22 +56,23 @@
       }
     }
   }
- // Justificar texto de todas las etiquetas <p> dentro de .cuerpo
- p {
-  text-align: justify;
-  background-color: #f2f2f2; 
+  // Justificar texto de todas las etiquetas <p> dentro de .cuerpo
+  p {
+    text-align: justify;
+    background-color: #f2f2f2; 
     padding: 10px; 
     margin: 0; 
-}
+  }
 
   .botella {
     width: 50%;
     height: auto;
   }
+
   .carousel-img {
-    height: 600px; /* Establece la altura fija para las imágenes */
+    height: 600px; 
+    max-width: 100%; 
   }
-  
 
   .contenedor-contacto {
     display: flex;
@@ -82,14 +85,13 @@
   .contacto {
     background-color: #f2f2f2;
     padding: 3%;
-    width: 30%; /* Ancho específico para modo PC, ajustar según necesidades */
-    /* max-width: 100%; */ /* Asegura que ocupe el ancho máximo permitido */
+    width: 30%;
+    
   }
   
   textarea {
     width: 100%;
   }
-  
 
   // Estilo para el botón del menú en modo responsivo 
   @media (max-width: 767px) {
@@ -103,7 +105,10 @@
         color: white;
       }
     }
-
+    .carousel-img {
+      height: 200px; 
+      max-width: 100%; 
+    }
     video:not(.responsive-video) {
       width: 100%;
       height: auto;
