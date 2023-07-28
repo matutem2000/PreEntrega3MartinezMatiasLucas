@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .button-style, .cuerpo .menu {
   background-color: black;
   color: white;
@@ -18,10 +17,6 @@
   background-repeat: repeat-y;
   font-family: Verdana, Geneva, sans-serif;
   margin-bottom: 50px;
-  /* .botella {
-    width: auto;
-    height: auto;
-  }  */
 }
 .cuerpo .img-logo {
   width: 110px;
@@ -58,9 +53,8 @@
 .cuerpo .contenedor-contacto {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   height: 50vh;
-  max-width: 100%; /* Asegura que ocupe el ancho máximo permitido */
+  max-width: 100%;
 }
 .cuerpo .contacto {
   background-color: #f2f2f2;
@@ -69,6 +63,10 @@
 }
 .cuerpo textarea {
   width: 100%;
+}
+.cuerpo video {
+  width: 50%;
+  height: auto;
 }
 @media (max-width: 767px) {
   .cuerpo .menu {
@@ -80,6 +78,9 @@
     background-color: transparent;
     color: white;
   }
+  .cuerpo .botella {
+    max-width: 200px;
+  }
   .cuerpo .carousel-img {
     height: 200px;
     max-width: 100%;
@@ -87,6 +88,17 @@
   .cuerpo video:not(.responsive-video) {
     width: 100%;
     height: auto;
+  }
+  .cuerpo .contenedor-contacto {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    max-width: 100%;
+  }
+  .cuerpo .contacto {
+    background-color: #f2f2f2;
+    padding: 3%;
+    width: 80%;
   }
 }
 
@@ -97,7 +109,8 @@ footer {
   width: 100%;
   text-align: center;
   background-color: #f2f2f2;
-  /* margin-top: 20px; */
+  padding-top: 20px;
+  padding-bottom: 20px;
   height: 50px;
 }
 

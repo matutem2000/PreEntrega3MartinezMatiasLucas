@@ -23,8 +23,9 @@
   font-family: Verdana, Geneva, sans-serif;
   margin-bottom: $footer-height;
 
+  // Extendemos la clase para estilos de botones en .menu
   .menu {
-    @extend .button-style; // Extendemos la clase para estilos de botones en .menu
+    @extend .button-style; 
   }
 
   .img-logo {
@@ -56,7 +57,7 @@
       }
     }
   }
-  // Justificar texto de todas las etiquetas <p> 
+  
   p {
     text-align: justify;
     background-color: #f2f2f2; 
@@ -64,10 +65,6 @@
     margin: 0; 
   }
 
-   /* .botella {
-    width: auto;
-    height: auto;
-  }  */
 
   .carousel-img {
     height: 600px; 
@@ -77,9 +74,8 @@
   .contenedor-contacto {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     height: 50vh;
-    max-width: 100%; /* Asegura que ocupe el ancho máximo permitido */
+    max-width: 100%; 
   }
   
   .contacto {
@@ -91,6 +87,10 @@
   
   textarea {
     width: 100%;
+  }
+  video{
+    width: 50%;
+    height: auto;
   }
 
   // Estilo para el botón del menú en modo responsivo 
@@ -106,6 +106,9 @@
       }
     }
    
+      .botella {
+      max-width:200px; 
+    }  
     .carousel-img {
       height: 200px; 
       max-width: 100%; 
@@ -113,6 +116,18 @@
     video:not(.responsive-video) {
       width: 100%;
       height: auto;
+    }
+    .contenedor-contacto {
+      display: flex;
+      justify-content: center;
+      height: 70vh;
+      max-width: 100%; 
+    }
+    .contacto {
+      background-color: #f2f2f2;
+      padding: 3%;
+      width: 80%;
+      
     }
   }
 }
