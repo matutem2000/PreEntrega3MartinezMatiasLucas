@@ -46,48 +46,69 @@
     </header>
     <main>
       <section>
-          <div class="container text-center">
-              <h1 class="mt-3 animate__animated animate__flip">Promociones</h1>
+        <div class="container text-center bg-secondary">
+            <h1 class="mt-3 animate__animated animate__flip">Promociones</h1>
               <h4>Este mes un descuento del 70% sobre precio total en la compra de estos tres productos</h4>
-              <div class="row">
+              <div class="row text-center">
                   <div class="col col-lg-4 col-sm-12">
-                    <div class="row bg-secondary pt-3 pb-3">
-                      <div class="col col-lg-6 col-sm-12">
-                        <img class="botella" src="../img/bottle-rose.png" alt="imagen de vino rosado" title="Alamos Malbec Rosé">
-                      </div>
-                      <div class="col col-lg-6 col-sm-12">
-                        <p>Alamos elabora vinos de calidad de Argentina, ofreciendo lo mejor de los viñedos de gran altitud 
-                          de Mendoza a un precio increíble. Las uvas Alamos se cultivan en las estribaciones de la Cordillera 
-                          de los Andes en elevaciones de 3,000 a 5,000 pies, donde la luz solar intensa, las temperaturas frescas 
-                          de la noche y el riego rico en minerales del deshielo de la montaña se traducen en vinos ricos con 
-                          características de sabor intenso.</p>
+                    <button type="button" class="btn btn-transparent" data-bs-toggle="modal" data-bs-target="#Rosado">
+                      <img class="botella" src="../img/bottle-rose.png" alt="imagen de vino rosado" title="Alamos Malbec Rosé">
+                    </button>
+                    <!-- Modal vino rosado -->
+                    <div class="modal fade" id="Rosado" tabindex="-1" aria-labelledby="rosadoModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="rosadoModalLabel">Alamos Malbec Rosé</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <img class="botella" src="../img/bottle-rose.png" alt="imagen de vino rosado" title="Alamos Malbec Rosé">
+                            <p>2-3 días de maceración prefermentativa en frío. 15-20 días de fermentación. Temperatura media de fermentación: 15º- 18º C. 5 meses en roble francés.</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
+                     <!-- Fin Modal vino rosado -->
                   </div>
                   <div class="col col-lg-4 col-sm-12">
-                    <div class="row bg-secondary pt-3 pb-3 mx-1">
-                      <div class="col col-lg-6 col-sm-12">
-                        <img class="botella" src="../img/bottle-cabernet.png" alt="imagen de vino cabernet sauvignon">
-                      </div>
-                      <div class="col col-lg-6 col-sm-12">
-                        <p>Ofreciendo lo mejor de los viñedos de gran altitud de Mendoza a un precio increíble. Las uvas 
-                          Alamos se cultivan en las estribaciones de la Cordillera de los Andes en elevaciones de 3,000 a 5,000 pies, 
-                          donde la luz solar intensa, las temperaturas frescas de la noche y el riego rico en minerales 
-                          de la montaña se traducen en vinos ricos con características de sabor intenso. </p>
+                    <button type="button" class="btn btn-transparent" data-bs-toggle="modal" data-bs-target="#cabernet">
+                      <img class="botella" src="../img/bottle-cabernet.png" alt="imagen de vino cabernet sauvignon">
+                    </button>
+                    <!-- Modal cabernet sauvignon-->
+                    <div class="modal fade" id="cabernet" tabindex="-1" aria-labelledby="cabernetModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="cabernetModalLabel">Alamos Cabernet Sauvignon</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <img class="botella" src="../img/bottle-cabernet.png" alt="imagen de vino cabernet sauvignon">
+                            <p>2-3 días de maceración prefermentativa en frío. 8-12 días de fermentación. Temperatura media de fermentación: 28º 30º C. Fermentación 100% maloláctica. 6-9 meses en roble francés. </p>
+                          </div>
+                        </div>
                       </div>
                     </div>
+                    <!-- Fin Modal cabernet sauvignon-->
                   </div>
                   <div class="col col-lg-4 col-sm-12">
-                    <div class="row bg-secondary pt-3 pb-3">
-                      <div class="col col-lg-6 col-sm-12">
-                        <img class="botella" src="../img/bottle-chardonnay.png" alt="imagen de vino chardonay">
-                      </div>
-                      <div class="col col-lg-6 col-sm-12">
-                        <p>Alamos elabora vinos de calidad de Argentina, ofreciendo lo mejor de los viñedos de gran altitud 
-                          de Mendoza a un precio increíble. Las uvas Alamos se cultivan en las estribaciones de la Cordillera 
-                          de los Andes en elevaciones de 3,000 a 5,000 pies, donde la luz solar intensa, las temperaturas frescas 
-                          de la noche y el riego rico en minerales del deshielo de la montaña se traducen en vinos ricos con 
-                          características de sabor intenso.</p>
+                    <button type="button" class="btn btn-transparent" data-bs-toggle="modal" data-bs-target="#chardonay">
+                      <img class="botella" src="../img/bottle-chardonnay.png" alt="imagen de vino chardonay">
+                    </button>
+                    <!-- Modal chardonay -->
+                    <div class="modal fade" id="chardonay" tabindex="-1" aria-labelledby="chardonayModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="chardonayModalLabel">Alamos Chardonay</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <img class="botella" src="../img/bottle-chardonnay.png" alt="imagen de vino chardonay">
+                            <p>De color amarillo dorado con matices verdes. Alamos Chardonnay ofrece intensos aromas de frutas tropicales, cítricos y atractivas notas florales. Sabores concentrados de peras e higos con suaves notas de vainilla y especias dulces.</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
